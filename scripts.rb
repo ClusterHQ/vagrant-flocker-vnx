@@ -6,6 +6,7 @@ end
 
 def setup_vnx()
     $script = <<SCRIPT
+sudo apt-get install -y sg3-utils
 wget https://github.com/emc-openstack/naviseccli/raw/master/navicli-linux-64-x86-en-us_7.33.2.0.51-1_all.deb
 sudo dpkg -i navicli-linux-64-x86-en-us_7.33.2.0.51-1_all.deb
 git clone https://github.com/ClusterHQ/flocker-vnx-driver.git
